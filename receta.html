@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <title>Project Test</title>
+     <style>
+        .parallax-container {
+          height: 200px;
+        }
+         
+        .picker__date-display { background-color: #6d4e7a; }
+        .picker__day.picker__day--today { color: red; }
+        .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected { background-color: #6d4e7a;}
+        .picker__close { color: #6d4e7a !important;}
+        .picker__today { color: #6d4e7a !important;}
+         
+     </style>
+     
+</head>
+
+ <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="left brand-logo">
+                    
+                </a>
+                <ul id="mnuOptions" class="dropdown-content">
+                  <li><a href="#!">one</a></li>
+                  <li><a href="#!">two</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">three</a></li>
+                </ul>
+                <ul class="right">
+                    <!--<li><a href="sass.html"><i class="material-icons">search</i></a></li>-->
+                    <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="mnuOptions"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+        
+        <div class="section white">
+            <div class="row container">
+                <h4 class="header">{{Nombre}}</h4>
+				<h5>Ingredientes</h5>
+				<p class="grey-text text-darken-3 lighten-3">
+                    {{Ingredientes}}
+                </p>
+				<h5>Preparación</h5>
+                <p class="grey-text text-darken-3 lighten-3">
+                    {{Preparacion}}
+                </p>
+            </div>
+        </div>
+    </div>
+     
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/sample_data.js"></script>
+     <script type="text/javascript" src="js/receta.html.js"></script>
+    
+</body>
+</html>
